@@ -31,11 +31,11 @@ self.addEventListener('fetch', event => {
 })
 
 // 4. sync: Recuperamos la conexion a internet
-// self.addEventListener('sync', event => {
-//     console.log('Tenemos conexión: ');
-//     console.log(event);
-//     console.log(event.tag);
-// })
+self.addEventListener('sync', event => {
+    console.log('Tenemos conexión: ');
+    console.log(event);
+    console.log(event.tag);
+})
 
 // Push
 self.addEventListener('push', event => {
