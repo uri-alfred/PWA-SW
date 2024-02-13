@@ -9,7 +9,7 @@ self.addEventListener('install', event => {
             // para que se actualice y recargue por si sola
             self.skipWaiting()
             resolve()
-        }, 1)
+        }, 1000)
     })
     event.waitUntil(instalacion)
 })
